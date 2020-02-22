@@ -1,0 +1,339 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+/*Add the selector and rule to move the skip link to the exact top.*/
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+body{
+	/*font-family: 'Karla', sans-serif;*/
+	font-family: 'Anonymous Pro', monospace;
+	/*font-family: 'Cousine', monospace;
+	font-family: 'Fira Mono', monospace;*/
+	display:grid;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-row-gap: 30px;
+}
+
+/*-----------navigation-----------*/
+
+.navigation-class{
+	grid-row: 1/span 1;
+}
+
+#home_page .logoBarMobile{
+	display: none;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.mobile-nav #mobileLinks {
+  display: none;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.mobile-nav a.icon {
+  background: #0D005F;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#mobileLinks a:hover {
+  background-color: white;
+  color: black;
+}
+
+.logoBarMobile {
+  background-color: #0D005F;
+  color: white;
+}
+
+#eco-data-nav{
+	text-align: left;
+}
+
+.desktop-nav-home{
+	display: none;
+}
+
+.desktop-nav{
+	display: none;
+}
+
+/*-----------page titles-----------*/
+.page-title{
+	font-size: 30px;
+	padding-left:30px;
+}
+
+/*-----------page headers-----------*/
+.page-header{
+	font-size: 20px;
+	padding-left:30px;
+}
+
+/*-----------home title-----------*/
+
+.home-title{
+	grid-row: 2/span 1;
+	text-align: center;
+	font-size: 35px;
+	padding: 15px;
+}
+
+
+/*-----------home image-----------*/
+
+.home-image{
+	grid-row: 3/span 1;
+ 	background-image: url("../images/home-image2.jpg");
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-image img{
+	max-width: 100%;
+}
+
+
+/*-----------overview paragraph-----------*/
+#home-page .overview{
+	grid-row: 6/span 1;
+	padding: 5px;
+	padding-bottom: 60px;
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+/*-----------link icons*-----------*/
+
+.link-icons{
+	align-self: center;
+  	justify-self: center;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+.about-icon-class{
+	grid-row: 5/span 1;
+}
+
+.projects-icon-class{
+	grid-row: 6/span 1;
+	padding: 30px;
+}
+
+.contact-icon-class{
+	grid-row: 7/span 1;
+	padding: 30px;
+}
+
+/*-----------about content-----------*/
+#about-page p{
+	padding-right: 30px;
+	padding-left: 30px;
+	line-height: 1.5;
+	font-size: 16px;	
+}
+
+/*-----------projects-----------*/
+.projects{
+	align-self: center;
+  	justify-self: center;
+  	text-align: center;
+}
+
+.project-image{
+	min-width: 100%
+}
+
+.project-link{
+	font-size: 25px;
+	color: #0D005F;
+	background-color: #ADFF2F;
+}
+
+/*-----------footer-----------*/
+
+.foot{
+	grid-row: 8/span 1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #0D005F;
+	padding:5px;
+	/*padding-right: 5px;*/
+
+  	text-align: center;
+
+}
+
+.foot img{
+	padding:2.5px;
+	/*padding-right: 5px;*/
+	align-self: right;
+  	justify-self: right;
+  	text-align: right;
+}
+
+
+@media screen and (min-width: 800px){
+	
+	.mobile-nav{
+		display:none;
+	}
+
+	#home-page .desktop-nav-home{
+		display: block;
+		text-align: right;
+		padding:20px;
+	}
+
+	#home-page .desktop-nav-home a{
+		color: black;
+		text-decoration: none;
+		font-size: 18px;
+		padding:5px;	
+	}
+
+	#home-page .desktop-nav-home a:hover{
+		color: #0D005F;
+		text-decoration: underline;
+	}
+
+	.link-icons{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+
+	.about-icon-class{
+		grid-column: 1/ span 1;
+		grid-row: 5/ span 1;
+	}
+	.projects-icon-class{
+		grid-column: 2/ span 1;
+		grid-row: 5/ span 1;
+	}
+	.contact-icon-class{
+		grid-column: 3/ span 1;
+		grid-row: 5/ span 1;
+	}
+
+	#about-page .desktop-nav{
+		display: block;
+	}
+
+	#project-page .desktop-nav{
+		display: block;
+	}
+
+	#contact-page .desktop-nav{
+		display: block;
+	}
+
+	.desktop-nav {
+		background-color: #0D005F;
+		/*text-align: right;*/
+		padding:20px;
+	}
+
+	.desktop-nav a{
+		color: white;
+		text-decoration: none;
+	}
+
+	.page-links a:hover{
+		color: #ADFF2F;
+		text-decoration: underline;
+	}
+
+	#desktopLinks{
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+
+	.page-links{
+		text-align: right;
+		grid-column: 2/ span 1: 
+		grid-row: 1/ span 1;
+	}
+
+	#eco-data-nav{
+		text-align: left;
+		grid-column: 1/ span 1: 
+		grid-row: 1/ span 1;
+	}
+
+	#active{
+		color: #ADFF2F;
+	}
+
+	.about-icon-class{
+		padding: 30px;
+	}
+
+
+	.projects{
+		display: inline block;
+	}
+	.project-item{
+		position: relative;
+	  text-align: center;
+	  color: white;
+	}
+
+
+	.project-image img:hover{
+
+  		opacity: .5;
+}
+
+	.project-link {
+		opacity:; 1;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+	
