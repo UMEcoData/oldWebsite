@@ -189,8 +189,8 @@ body{
 
 .project-link{
 	font-size: 25px;
-	color: #0D005F;
-	background-color: #ADFF2F;
+	color: black;
+	background-color: white;
 }
 
 /*-----------footer-----------*/
@@ -283,10 +283,16 @@ body{
 		text-decoration: none;
 	}
 
+
 	.page-links a:hover{
-		color: #ADFF2F;
+		text-decoration: underline;	
+	}
+
+
+	#active{
 		text-decoration: underline;
 	}
+
 
 	#desktopLinks{
 		display: grid;
@@ -305,9 +311,6 @@ body{
 		grid-row: 1/ span 1;
 	}
 
-	#active{
-		color: #ADFF2F;
-	}
 
 	.about-icon-class{
 		padding: 30px;
