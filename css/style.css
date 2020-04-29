@@ -32,6 +32,12 @@ body{
 	grid-row-gap: 30px;
 }
 
+.attribute{
+	padding-top: 250px;
+	font-size: 10px;
+	text-align: center;
+}
+
 /*-----------navigation-----------*/
 
 .navigation-class{
@@ -152,6 +158,15 @@ body{
   	justify-self: center;
   	text-align: center;
   	font-size: 25px;
+}
+
+.link-icons a{
+	text-decoration: none;
+	color:black;
+}
+
+.link-icons a:hover{
+	text-decoration: underline;
 }
 
 .about-icon-class{
