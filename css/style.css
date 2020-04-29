@@ -38,6 +38,10 @@ body{
 	text-align: center;
 }
 
+p{
+	font-family: verdana;
+}
+
 /*-----------navigation-----------*/
 
 .navigation-class{
@@ -115,7 +119,7 @@ body{
 	grid-row: 2/span 1;
 	text-align: center;
 	font-size: 35px;
-	padding: 15px;
+	padding: 30px;
 }
 
 
@@ -145,10 +149,11 @@ body{
 	grid-row: 6/span 1;
 	padding: 5px;
 	padding-bottom: 60px;
-	padding-right: 30px;
-	padding-left: 30px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 60px;
 	line-height: 1.5;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 /*-----------link icons*-----------*/
