@@ -105,6 +105,7 @@ p{
 .page-title{
 	font-size: 30px;
 	padding-left:30px;
+	padding-bottom: 50px;
 }
 
 /*-----------page headers-----------*/
@@ -212,6 +213,20 @@ p{
 	color: black;
 	background-color: white;
 }
+
+/*-----------contact-----------*/
+#contact-page form{
+	padding-left: 80px;
+}
+
+.contact-para{
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
+
+
 
 /*-----------footer-----------*/
 
