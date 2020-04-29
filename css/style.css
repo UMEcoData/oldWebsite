@@ -352,10 +352,10 @@ p{
 	}
 
 
-	.projects{
+	/*.projects{
 		display: inline block;
-	}
-	.project-item{
+	}*/
+/*	.project-item{
 		position: relative;
 	  text-align: center;
 	  color: white;
@@ -374,4 +374,4 @@ p{
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	}
-	
+*/	
