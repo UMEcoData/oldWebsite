@@ -23,10 +23,7 @@ html{
 
 
 body{
-	/*font-family: 'Karla', sans-serif;*/
 	font-family: 'Anonymous Pro', monospace;
-	/*font-family: 'Cousine', monospace;
-	font-family: 'Fira Mono', monospace;*/
 	display:grid;
 	grid-template-rows: auto auto auto auto auto auto auto auto;
 	grid-row-gap: 30px;
@@ -145,7 +142,7 @@ p{
 }
 
 
-/*-----------overview paragraph-----------*/
+/*-----------home overview paragraph-----------*/
 #home-page .overview{
 	grid-row: 6/span 1;
 	padding: 5px;
@@ -157,7 +154,7 @@ p{
 	font-size: 18px;
 }
 
-/*-----------link icons*-----------*/
+/*-----------home link icons*-----------*/
 
 .link-icons{
 	align-self: center;
@@ -197,11 +194,15 @@ p{
 	font-size: 16px;	
 }
 
-/*-----------projects-----------*/
+/*-----------project page-----------*/
 .projects{
 	align-self: center;
   	justify-self: center;
   	text-align: center;
+}
+
+.project-title{
+	font-size: 25px;
 }
 
 .project-image{
@@ -212,6 +213,12 @@ p{
 	font-size: 25px;
 	color: black;
 	background-color: white;
+}
+
+.project-description{
+	padding: 30px;
+	line-height: 1.5;
+	text-align: left;
 }
 
 /*-----------contact-----------*/
@@ -351,27 +358,20 @@ p{
 		padding: 30px;
 	}
 
+	/*-----------project formating-----------*/
 
-	/*.projects{
-		display: inline block;
-	}*/
-/*	.project-item{
-		position: relative;
-	  text-align: center;
-	  color: white;
+	.projects{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto, auto;
 	}
 
-
-	.project-image img:hover{
-
-  		opacity: .5;
-}
-
-	.project-link {
-		opacity:; 1;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
+	.project-item-1{
+		grid-column: 1/span 1;
+		grid-row: 1/span 1;
 	}
-*/	
+
+	.project-item-2{
+		grid-column: 2/ span 1;
+		grid-row: 1/span 1;
+	}
