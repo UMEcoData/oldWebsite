@@ -1,24 +1,22 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-
-.skip a{
-  background: white;
-  left: 0;
-  padding: 6px;
-  position: absolute;
-  top: -40px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
 }
 
-.skip a:focus{
-/*Add the selector and rule to move the skip link to the exact top.*/
-  position: static;
-  width: auto;
-  height: auto;
+.skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
 }
 
 
