@@ -1,6 +1,5 @@
 # EcoData 
 
-TESTING 1234
 
 This is the code for the Michigan EcoData website created by Madeline Richards. 
 
