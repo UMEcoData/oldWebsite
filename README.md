@@ -1,6 +1,6 @@
 # EcoData 
 
-<!-- This is the code for the Michigan EcoData website created by Madeline Richards. 
+This is the code for the Michigan EcoData website created by Madeline Richards. 
 
 
 The page include:
@@ -23,4 +23,3 @@ Images used for the site are in the image folder. Any image added to the site mu
 
 
 For any questions on the code or how to edit the website, please contact Madeline Richards (madejoyr@umich.edu)
- -->
