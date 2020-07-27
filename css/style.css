@@ -110,6 +110,9 @@ p{
 	padding-left:30px;
 }
 
+/*-----------------------home page-----------------------*/
+
+
 /*-----------home title-----------*/
 
 .home-title{
@@ -185,7 +188,7 @@ p{
 	padding: 30px;
 }
 
-/*-----------about content-----------*/
+/*----------------------about page----------------------*/
 #about-page p{
 	padding-right: 30px;
 	padding-left: 30px;
@@ -193,7 +196,23 @@ p{
 	font-size: 16px;	
 }
 
-/*-----------project page-----------*/
+/*-----------bios-----------*/
+.board-bios{
+	text-align: center;
+}
+
+.board-bios #pic{
+	padding-top: 25px;
+}
+
+.bios_desktop{
+  display: none;
+}
+
+
+
+
+/*----------------------project page----------------------*/
 .projects{
 	align-self: center;
   	justify-self: center;
@@ -221,7 +240,7 @@ p{
 	text-align: left;
 }
 
-/*-----------contact-----------*/
+/*----------------------contact----------------------*/
 #contact-page form{
 	padding-left: 80px;
 }
@@ -357,6 +376,30 @@ p{
 	.about-icon-class{
 		padding: 30px;
 	}
+
+	.bios_desktop{
+		display: grid;
+  		grid-column: 1/span 3;
+  		grid-row: 5/span 1;
+	}
+
+	#about-page ul{
+		list-style: none;
+	}
+
+	#about-page .bios-mobile{
+		display: none;
+	}
+
+	#about-page .row {
+		display: flex;
+	}
+
+	#about-page .bios_desktop .column{
+		flex: 33.33%;
+  		padding: 50px;
+	}
+
 
 	/*-----------project formating-----------*/
 
