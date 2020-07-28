@@ -196,6 +196,15 @@ p{
 	font-size: 16px;	
 }
 
+#about-page ul{
+		list-style: none;
+	}
+
+.board-member{
+	padding-bottom: 20px;
+}
+
+
 /*-----------bios-----------*/
 .board-bios{
 	text-align: center;
@@ -208,6 +217,27 @@ p{
 .bios_desktop{
   display: none;
 }
+
+#name{
+	font-size: 18px;
+}
+
+#title{
+	font-style: italic;
+	padding-bottom: 15px;
+}
+
+
+#info{
+	text-align: left;
+	font-family: verdana;
+	font-size: 12px;
+	line-height: 1.2;
+	padding-left: 35px;
+	padding-right: 10px;
+}
+
+
 
 
 
