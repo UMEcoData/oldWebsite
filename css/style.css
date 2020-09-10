@@ -220,11 +220,15 @@ p{
 
 #name{
 	font-size: 18px;
+	padding-top: 5px;
 }
 
 #title{
 	font-style: italic;
 	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 
@@ -237,6 +241,13 @@ p{
 	padding-right: 10px;
 }
 
+.advisor-bios{
+	text-align: center;
+}
+
+.advisor-bios #pic{
+	padding-top: 25px;
+}
 
 
 
