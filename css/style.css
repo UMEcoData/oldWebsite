@@ -257,22 +257,34 @@ p{
 .projects{
 	align-self: center;
   	justify-self: center;
-  	text-align: center;
+  	/*text-align: center;*/
 }
 
 .project-title{
 	font-size: 25px;
+	align-self: left;
+  	justify-self: left;
 }
 
 .project-image{
 	min-width: 100%;
-	align-self: center;
+	text-align:left;
+}
+
+.project-image img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .project-link{
 	font-size: 25px;
 	color: black;
 	background-color: white;
+}
+
+.project-item{
+	padding: 5%;
 }
 
 .project-description{
@@ -370,6 +382,16 @@ p{
 		display: block;
 	}
 
+	#project-page .project-image:hover {
+  		filter: brightness(85%);
+  		-webkit-transition: all 1s ease;
+	    -moz-transition: all 1s ease;
+	    -o-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	    transition: all 1s ease;
+	}
+
+
 	#contact-page .desktop-nav{
 		display: block;
 	}
@@ -450,12 +472,18 @@ p{
 		grid-template-rows: auto, auto;
 	}
 
-	.project-item-1{
+	#project-item-1{
 		grid-column: 1/span 1;
 		grid-row: 1/span 1;
 	}
 
-	.project-item-2{
+	#project-item-2{
 		grid-column: 2/ span 1;
 		grid-row: 1/span 1;
+	}
+
+	.project-image img{
+		display: inline-block;
+    	width: 100%;
+    	height: auto;
 	}
