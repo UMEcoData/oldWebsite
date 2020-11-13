@@ -24,7 +24,7 @@ function myFunction() {
 
 
 
-<body id = "project-page">
+<body id = "individual-project-pages">
   <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
 
  
@@ -56,8 +56,8 @@ function myFunction() {
           <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
           <div class="page-links">
             <a href="about.html">About</a>
-            <a href="projects.html" id="active">Projects</a>
-            <a href="contact.html">Contact</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" id="active">Contact</a>
           </div>
         </div>
       </div>
@@ -69,9 +69,34 @@ function myFunction() {
 
 <h1 class ='page-title'>Michigan Chemical Heatmap</h1>
 
-<p class="project-description">
-          The goal of this project is to visualize where chemicals are above critical levels in Michigan. It is important to bring awareness to this information for Michigan residents because some chemicals that exist above critical levels can be dangerous. By compiling and structuring EPA UCMR datasets, we created a program that creates heatmaps displaying chemical levels searchable by chemical. For each chemical, we have written short summaries breaking down what it is and how it could potentially be harmful when above critical levels. The next step to this project is launching the program in an interactive web tool that users can easily filter by chemical and year. <br><a href= "https://github.com/UMEcoData/Michigan-Chemical-Contamination-Heatmaps"> View the code on GitHub</a>
+
+
+<p class='contributors'>Contributors: Krithik Vallem 
+Jiyang Zhou
+Lily Zhai 
+Lilly Wu 
+Adam Mentzer 
+Emily Sun 
+Madeline Richards 
+Dhanuj Gandikota 
+Karl Goddard 
+Daniel Schenider 
+Keerthi Sajja 
+Michael Yufa-Zimilevich
 </p>
+
+<p class="project-description">
+          As humans, our impact on the environment has increased significantly as our modern society continues to grow and advance. And most of the time, our “footprint” has been more harmful than helpful as things like climate change, deforestation, pollution, etc. And while effects like pollution and chemical waste dumping harm the ecosystem and the living organisms in them, it also comes back around to affect us as humans as well, in our drinking water, soil and air. Therefore, the driving force for the implementation of this heatmap was to provide a resource for users in Michigan to be able to see what areas of Michigan are contaminated with what chemicals. Additionally, by using data scraping and visualization techniques, the heatmap is able to meaningfully present a large amount of data from the EPA in a way that is quickly and easily understood. 
+          <br><br>
+          While the EPA provides the data for contamination sites and dates for the state of Michigan, the dataset contains hundreds of data points and is difficult to determine the impactful data. The chemical heatmap, that was implemented using Python, HTML, CSS, and Javascript, allows users to input data (ex. Year or Zipcode) and then generates the heatmap for the specific contaminant. The heatmap also has a functionality where information about the contaminants is also provided to the user, including information like its potential effects on human health/its origin and results of exposure. When run, the final product presented to the user is a heatmap of the state of Michigan, divided into regions by Zipcode, with a specific contaminant and year and the affected region highlighted accordingly. The user can also roll over each region to show the respective Zipcode and, if the region is affected, the reported value of the contaminant. Lastly, the user is also presented with a short description of the selected contaminant, some basic background information, and information of its effects on human health. The actual heatmap is generated using Python code, including the functionality of some of its built-in libraries including pandas and numpy. The heatmap is then hosted on a site created using HTML and CSS, which our team used to create the site including drop-down menus, buttons, pop-up reports, navigation bar, and “About” page. Additionally, Javascript and JSON was also implemented in the project and contributed to some of the heatmap’s functionality. 
+          <br><br>
+          In conclusion, the Chemical Heatmap project was created as a meaningful way to intersect data science, computer science, and environmental/sustainability principles that would ideally positively impact users who interact with it. In addition, it’s functionality would also be relevant to the organization and the University home state. As implemented, we hope it can help inform users about the potential contaminants in their areas, inform them about the harmful effects of chemical dumping and/or improper waste disposal, and help inspire more people about sustainability efforts. 
+          <br><br>
+          <a href= "https://github.com/UMEcoData/Michigan-Chemical-Contamination-Heatmaps"> View the code on GitHub</a>
+</p>
+
+<p class="sources">Data Source: <a href="https://www.epa.gov/dwucmr/learn-about-unregulated-contaminant-monitoring-rule">https://www.epa.gov/dwucmr/learn-about-unregulated-contaminant-monitoring-rule</a></p>
+
 
 
 

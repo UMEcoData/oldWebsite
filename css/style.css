@@ -287,11 +287,32 @@ p{
 	padding: 5%;
 }
 
-.project-description{
-	padding: 30px;
+/*.project-description{
+	padding-left: 30px;
+	padding-right: 30px;
 	line-height: 1.5;
 	text-align: left;
+}*/
+
+/*----------------------each project page----------------------*/
+
+.contributors{
+	font-size:12px;
+	font-style: italic;
+	padding-left: 30px;
+	padding-right: 30px;
 }
+
+.project-description{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.sources{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 
 /*----------------------contact----------------------*/
 #contact-page form{
@@ -379,6 +400,10 @@ p{
 	}
 
 	#project-page .desktop-nav{
+		display: block;
+	}
+
+	#individual-project-pages .desktop-nav{
 		display: block;
 	}
 
