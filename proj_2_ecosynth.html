@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title> Michigan EcoData Club Website: Project 2</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTY8WVSYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TTY8WVSYN');
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700|Cousine|Fira+Mono:500|Karla&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  function myFunction() {
+    var x = document.getElementById("mobileLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+</head>
+
+
+
+
+<body id = "individual-project-pages">
+  <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
+
+ 
+  <header>
+    <nav class="navigation-class">
+      
+      <div class="mobile-nav">
+        <a href="index.html" class="logoBarMobile" id="eco-data-nav">Michigan EcoData</a>
+        <div id="mobileLinks">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" aria-label="menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div class="desktop-nav-home">
+        <div id="desktopLinks">
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <div class="desktop-nav">
+        <div id="desktopLinks">
+          <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
+          <div class="page-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" id="active">Contact</a>
+          </div>
+        </div>
+      </div>
+    
+    </nav>
+  </header>
+
+
+
+<h1 class ='page-title'>Eco-Update Synthesizer</h1>
+
+
+
+<p class='contributors'>Contributors: 
+    Anthony Marx,
+    Karl Godard,
+    Maya Baveja,
+    Abigail Williams,
+    Garvey Zhou,
+    Jessica Zenas,
+    Julia Kaplan,
+    Nitya Nakirekanti,
+    Daniel Schneider
+</p>
+
+<p class="project-description">
+  Summary: Given the speed at which information is generated and shared today, nobody can be faulted for not remaining up to date about the large environmental changes constantly occurring. The Eco-Update Synthesizer attempts to combat this problem by creating a tool which will scrape the news, media and government sources in real time to collect and display a database of global updates in environmental changes and policy. First, the Synthesizer development team will scrape a select set of reputable news sources, including MLive, Detroit News, and the BBC, and focus on the topic of Green Energy. In the future, the Synthesizer will expand its focus to include a wider range of sources, a variety of environmental topics, and deeper analysis into featured articles. 
+  <br><br>
+  Vision: Right now we’ve chosen three news sites to scrape. For each, we plan to search the webpage for both the titles and links to each of the articles on the page. From here, we will filter the list of articles for ones that contain specific environmental keywords that we’ve chosen. The output for each webpage will be a python dictionary mapping article titles to their corresponding links. If possible, we’d like the webpage for the Eco-Update Synth to have a section for each news site. In the section for a specific news site, there would be a list of all the article titles, hyperlinked to their respective articles. 
+  <br><br>
+  For this set up, each news site would likely be accompanied by an image to represent that news site. In the future, we hope to search into the actual content of the articles, searching for specific keywords and running other analysis. 
+  <br><br>
+  All code is written from scratch using Python, BeautifulSoup, Pandas, and other common python libraries
+
+</p>
+
+
+
+
+<p class="sources">Current news sites: </p>
+
+<ul class="sources">
+  <li><a href="https://www.mlive.com/">https://www.mlive.com/</a></li>
+  <li><a href="https://www.detroitnews.com/">https://www.detroitnews.com/</a></li>
+  <li><a href="https://www.bbc.com/news/science_and_environment">https://www.bbc.com/news/science_and_environment</a></li>
+</ul>
+
+
+
+<footer>
+    <div class="foot">
+      <a href="https://www.facebook.com/Michigan-Eco-Data-489563858237129/"><img src="images/facebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/michiganecodata/"><img src="images/instagram.png" alt="instagram"></a>
+      <a href="https://github.com/UMEcoData"><img src="images/github.png" alt="github"></a>
+    </div>
+</footer>
+
+
+  </body>
+
+
+</html>

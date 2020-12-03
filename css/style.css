@@ -313,6 +313,28 @@ p{
 	padding-right: 30px;
 }
 
+.button{
+	width: 200px;
+	background-color:black;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: underline;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	align-self: center;
+  	justify-self: center;
+}
+
+.button:hover {
+	background: #0D005F;
+}
+
+
+
 
 /*----------------------contact----------------------*/
 #contact-page form{
@@ -408,7 +430,7 @@ p{
 	}
 
 	#project-page .project-image:hover {
-  		filter: brightness(85%);
+  		filter: brightness(55%);
   		-webkit-transition: all 1s ease;
 	    -moz-transition: all 1s ease;
 	    -o-transition: all 1s ease;
