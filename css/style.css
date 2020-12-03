@@ -299,18 +299,18 @@ p{
 .contributors{
 	font-size:12px;
 	font-style: italic;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .project-description{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .sources{
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 .button{
