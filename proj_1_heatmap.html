@@ -38,13 +38,14 @@
 
  
   <header>
-    <nav class="navigation-class">
+   <nav class="navigation-class">
       
       <div class="mobile-nav">
         <a href="index.html" class="logoBarMobile" id="eco-data-nav">Michigan EcoData</a>
         <div id="mobileLinks">
           <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="projects.html" id="active">Projects</a>
           <a href="contact.html">Contact</a>
         </div>
         <a href="javascript:void(0);" class="icon" aria-label="menu" onclick="myFunction()">
@@ -55,7 +56,8 @@
       <div class="desktop-nav-home">
         <div id="desktopLinks">
           <a href="about.html">About</a>
-          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="projects.html" id="active">Projects</a>
           <a href="contact.html">Contact</a>
         </div>
       </div>
@@ -65,8 +67,9 @@
           <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
           <div class="page-links">
             <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html" id="active">Contact</a>
+            <a href="team.html">Team</a>
+            <a href="projects.html" id="active">Projects</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
       </div>
@@ -108,14 +111,20 @@
           Next, we built a website, which you can check out at <a href= "https://esun780.github.io/chem_heatmap.github.io/"> https://esun780.github.io/chem_heatmap.github.io/</a> . On our website, our team used HTML and CSS to create a simple user interface using drop-down menus, buttons, pop-up reports, and more. A user can select a chemical and a year, and JavaScript, through the Zingchart library, will be used to dynamically render a heatmap right in the user’s browser. This heatmap is an interactive map of the state of Michigan, divided into regions by Zip Code. Each Zip Code is shaded in with a color representing the amount of the chosen chemical contaminant found in that Zip Code in the chosen year. This heatmap can be zoomed in on and interacted with by the user, similarly to Google Maps. The user can also hover over each region to show the respective Zip Code and if the chosen contaminant was detected in that region, the reported value of the contaminant. Furthermore, the website also displays background information about the chosen contaminant, such as its potential effects on human health, its origin, and the results of exposure to it. Finally, users can also enter their Zip Code and receive a formatted report of every chemical contaminant across every year in the dataset that was detected in the entered Zip Code.
           <br><br>
           In conclusion, the Chemical Heatmap project was created as a meaningful way to intersect data science, computer science, and environmental/sustainability principles that would ideally positively impact users who interact with it. In addition, its functionality would also be relevant to the organization and the University’s home state. As implemented, we hope it can help inform users about the potential contaminants in their areas, inform them about the harmful effects of chemical dumping and/or improper waste disposal, and help inspire more people about sustainability efforts. 
+
     
 </p>
 
 
-<p class="sources">Data Source: <a href="https://www.epa.gov/dwucmr/learn-about-unregulated-contaminant-monitoring-rule">https://www.epa.gov/dwucmr/learn-about-unregulated-contaminant-monitoring-rule</a></p>
+<h2>Demo:</h2>
+
+<img class="gif" src="images/heatmap-clip1.gif">
+<!-- 
+<img class="gif" src="images/heatmap-clip2.gif"> -->
 
 <a href= "https://esun780.github.io/chem_heatmap.github.io/" class="button"> Go to the Project!</a>
 
+<p class="sources">Data Source: <a href="https://www.epa.gov/dwucmr/learn-about-unregulated-contaminant-monitoring-rule">https://www.epa.gov/dwucmr/learn-about-unregulated-contaminant-monitoring-rule</a></p>
 
 
 

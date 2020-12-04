@@ -287,6 +287,13 @@ p{
 	padding: 5%;
 }
 
+.gif{
+	align-self: center;
+  	justify-self: center;
+  	width: auto;
+  	height: auto;
+}
+
 /*.project-description{
 	padding-left: 30px;
 	padding-right: 30px;
@@ -294,23 +301,23 @@ p{
 	text-align: left;
 }*/
 
-/*----------------------each project page----------------------*/
+/*----------------------individual-project-pages----------------------*/
 
 .contributors{
 	font-size:12px;
 	font-style: italic;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .project-description{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .sources{
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 .button{
@@ -333,12 +340,19 @@ p{
 	background: #0D005F;
 }
 
+#individual-project-pages h2{
+	padding-left: 15%;
+	font-size: 30px;
+}
 
+.gif{
+	width: 100%;
+}
 
 
 /*----------------------contact----------------------*/
 #contact-page form{
-	padding-left: 80px;
+	padding-left: 20px;
 }
 
 .contact-para{
@@ -429,6 +443,10 @@ p{
 		display: block;
 	}
 
+	#team-page .desktop-nav{
+		display: block;
+	}
+
 	#project-page .project-image:hover {
   		filter: brightness(55%);
   		-webkit-transition: all 1s ease;
@@ -510,6 +528,22 @@ p{
   		padding: 50px;
 	}
 
+	#team-page ul{
+		list-style: none;
+	}
+
+	#team-page .bios-mobile{
+		display: none;
+	}
+
+	#team-page .row {
+		display: flex;
+	}
+
+	#team-page .bios_desktop .column{
+		flex: 33.33%;
+  		padding: 50px;
+  	}
 
 	/*-----------project formating-----------*/
 
@@ -534,3 +568,10 @@ p{
     	width: 100%;
     	height: auto;
 	}
+
+
+@media screen and (min-width: 1280px){
+	.gif{
+		width: auto;
+	}
+}
