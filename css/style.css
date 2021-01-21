@@ -200,12 +200,9 @@ p{
 		list-style: none;
 	}
 
-.board-member{
-	padding-bottom: 20px;
-}
 
 
-/*-----------bios-----------*/
+/*----------------------team page----------------------*/
 .board-bios{
 	text-align: center;
 }
@@ -214,8 +211,24 @@ p{
 	padding-top: 25px;
 }
 
+.member-bios{
+	text-align: center;
+}
+
+.member-bios #pic{
+	padding-top: 25px;
+}
+
 .bios_desktop{
   display: none;
+}
+
+.page-header{
+	text-align: left;
+}
+
+#team-page ul{
+	list-style-type: none;
 }
 
 #name{
@@ -241,6 +254,10 @@ p{
 	padding-right: 10px;
 }
 
+.member-bios #name{
+	padding-bottom: 15px;
+}
+
 .advisor-bios{
 	text-align: center;
 }
@@ -249,7 +266,9 @@ p{
 	padding-top: 25px;
 }
 
-
+.member{
+	padding-bottom: 20px;
+}
 
 
 
@@ -350,6 +369,20 @@ p{
 }
 
 
+/*----------------------rescources-page----------------------*/
+
+#resources-page ul{
+	padding-right: 70px;
+	padding-left: 70px;
+	font-family: verdana;
+	line-height: 1.2;
+}
+
+#resources-page .page-header{
+	padding-top: 25px;
+	padding-bottom: 5px;
+}
+
 /*----------------------contact----------------------*/
 #contact-page form{
 	padding-left: 20px;
@@ -436,6 +469,10 @@ p{
 	}
 
 	#project-page .desktop-nav{
+		display: block;
+	}
+
+	#resources-page .desktop-nav{
 		display: block;
 	}
 
@@ -543,6 +580,11 @@ p{
 	#team-page .bios_desktop .column{
 		flex: 33.33%;
   		padding: 50px;
+  	}
+
+  	#team-page #info{
+  		padding-right: 50px;
+  		padding-left: 50px;
   	}
 
 	/*-----------project formating-----------*/
