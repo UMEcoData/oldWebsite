@@ -359,13 +359,37 @@ p{
 	background: #0D005F;
 }
 
-#individual-project-pages h2{
-	padding-left: 15%;
-	font-size: 30px;
+#individual-project-pages .page-header{
+	padding-left: 5%;
+	font-size: 25px;
 }
 
 .gif{
 	width: 100%;
+}
+
+.independent-project-visualizations{
+	text-align: center;
+	align-self: center;
+  	justify-self: center;
+  	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#individual-project-pages .name-credit{
+	font-size: 20px;
+	font-family: verdana;
+	font-weight: normal;
+	font-style: italic;
+	padding-top: 10px;
+
+}
+
+#individual-project-pages p{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 
@@ -381,6 +405,10 @@ p{
 #resources-page .page-header{
 	padding-top: 25px;
 	padding-bottom: 5px;
+}
+
+#resources-page li a{
+	color: #0D005F;
 }
 
 /*----------------------contact----------------------*/

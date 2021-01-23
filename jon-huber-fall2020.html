@@ -27,12 +27,22 @@
     }
   }
   </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTY8WVSYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TTY8WVSYN');
+  </script>
+
 </head>
 
 
 
 
-<body id = "about-page">
+<body id = "individual-project-pages">
   <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
 
  
@@ -67,7 +77,7 @@
         <div id="desktopLinks">
           <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
           <div class="page-links">
-            <a href="about.html" id="active">About</a>
+            <a href="about.html">About</a>
             <a href="team.html">Team</a>
             <a href="projects.html">Projects</a>
             <a href="resources.html">Resources</a>
@@ -84,27 +94,42 @@
 
   <main>
     <div class="page-title">
-      <h1>About Us</h1>
+      <h1>Modeling the Extent of Polar Ice in the Arctic</h1>
+      <h2 class="name-credit">Jon Huber</h2>
+
     </div>
 
 
-  <div class = "content">
-    <div class="page-header">
+    <h2 class="page-header">Motivation:</h2>
+    <p>Before choosing a dataset, I knew that I wanted to raise awareness on the imminent dangers that global warming presents us. It feels as though many people do not understand the severity of the warming trends that we are encountering. Ultimately, I came across a very large dataset on Kaggle that contained the total extent of Sea Ice in various regions of the arctic. The measurements date back to 1978, and map the day and month with a numerical measurement of sea cap extent (unit is 10^6 sq km), as well as the hemisphere. Kaggle is a free, open-sourced website where people can download a variety of useful and informative datasets.
+    </p>
 
-      <h2>What We Do:</h2>
-      <br>
-    </div>
-    <p>Project Ideas can range from technical pursuits, such as the development of a website to track migration patterns, to more pursuits, such as collecting data on fluctuating ph levels in the Huron River. As these projects are inherently multidisciplinary, there is no prior experience needed to join—whether you majoring in EEB, Computer Science, or Econ—all disciplines bring  perspectives and information that are valuable to projects. <!-- Current project teams include the development of a Ecological footprint app and a system to identify trash in Coral Reefs. -->
     <br><br>
-    Michigan Eco Data also plans projects including the entire club along with fun group trips to exciting destinations or to aid with experimentation. Speakers and seminars will be pursued in the future as great way to explore the wonderful world of Eco Data. Our primary goal in starting this club was to build a collaborative community of students who share the passion and interest in the environment, technology, and data. This is a community where no ideas are too crazy and where we will all learn and explore without the stress and pressure of exams and homework! <!-- To build this community we have many virtual social events planned throughout the semester such as bonding events, game nights, parties, etc. --> <br><br>Students can join the club at any point during the semester. Meetings during the Fall 2020 semester will be held virtually on Wednesdays from 7-8PM EST. Make sure to fill out the interest form below in order to be added to the Slack and recieve emails.
-    <br><br>Interested in learning more?<br>
-        <a href = "https://docs.google.com/presentation/d/1f67eHTmd-iesbf3FNHv_ibm4LLzNSeeHfsBLt3lv-sE/edit?usp=sharing">-Check out our info slides</a><br>
-        <a href = "https://docs.google.com/forms/d/1AOokgBzo1zcMRqvcxFRO67qfbdSpe7S1JVseZ9oq2ko/edit">-Fill out our interest form</a><br>
-   </p>
 
-   <br><br>
+    <h2 class="page-header">Methods:</h2>
+    <p>First, I downloaded the data and got rid of a few unwanted columns. Next, I used Jupyter Notebook to practice some very basic modeling techniques using Python. I began to create a couple of visuals to gain familiarity with the trends in the data. I plotted a histogram and scatter plot to see the distribution of and range of ice extent, and to see which extent values fell under each of the twelve months.
+    </p>
 
-   
+    <br><br>
+
+    <h2 class="page-header">Findings:</h2>
+    <p>I noticed that September had arguably the largest variability in Sea Ice extent, while June and December had less variable extent data. Furthermore, it seems as though certain months–such as February–had ice extent that was either very high or very low–with little to no values in between.<br><br>
+    I plan to put together more visuals in the future, including models that split up the data by hemisphere so I can ask more specific questions. Furthermore, I would like to calculate and visualize more concretely how the extent of the ice has declined generally over time.
+    </p>
+
+    <br><br>
+    
+    <h2 class="page-header">Data Visualizations:</h2>
+    <!-- images -->
+    <div class="independent-project-visualizations">
+      <img src="images/jon_huber_fall2020_image00.png" alt="Figure 1: Barchart">
+      <img src="images/jon_huber_fall2020_image01.png" alt="Figure 2: Scatterplot">
+    </div>
+
+    
+    <br><br>
+    <h2 class="page-header">Cleaned Dataset:</h2>
+    <p><a href="https://drive.google.com/file/d/1PTVc52JjntIveGkcqdqhXI4E5OAusu1U/view?usp=sharing">https://drive.google.com/file/d/1PTVc52JjntIveGkcqdqhXI4E5OAusu1U/view?usp=sharing</a></p>
 
 
   </main>
