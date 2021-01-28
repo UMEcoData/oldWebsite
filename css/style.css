@@ -615,6 +615,28 @@ p{
   		padding-left: 50px;
   	}
 
+  	#resources-page ul{
+		list-style: none;
+	}
+
+	#resources-page .bios-mobile{
+		display: none;
+	}
+
+	#resources-page .row {
+		display: flex;
+	}
+
+	#resources-page .bios_desktop .column{
+		flex: 33.33%;
+  		padding: 50px;
+  	}
+
+  	#resources-page #info{
+  		padding-right: 50px;
+  		padding-left: 50px;
+  	}
+
 	/*-----------project formating-----------*/
 
 	.projects{
