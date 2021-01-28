@@ -273,7 +273,13 @@ p{
 
 
 /*----------------------project page----------------------*/
-.projects{
+.team-projects{
+	align-self: center;
+  	justify-self: center;
+  	/*text-align: center;*/
+}
+
+.independent-projects{
 	align-self: center;
   	justify-self: center;
   	/*text-align: center;*/
@@ -283,6 +289,13 @@ p{
 	font-size: 25px;
 	align-self: left;
   	justify-self: left;
+}
+
+#project-page .page-header{
+	background-color: #0D005F;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .project-image{
@@ -639,7 +652,7 @@ p{
 
 	/*-----------project formating-----------*/
 
-	.projects{
+	.team-projects{
 		display: grid;
 		grid-template-columns: 50% 50%;
 		grid-template-rows: auto, auto;
@@ -654,6 +667,13 @@ p{
 		grid-column: 2/ span 1;
 		grid-row: 1/span 1;
 	}
+
+	.independent-projects{
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-rows: auto, auto;
+	}
+
 
 	.project-image img{
 		display: inline-block;
