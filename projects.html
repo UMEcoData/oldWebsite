@@ -4,6 +4,8 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/html5reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Now using bootstrap, might have styling issues but they are fixable-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -29,6 +31,11 @@
   }
   </script>
 
+  <!--Rendering and touching zooming for mobile devices, etc-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 
@@ -59,11 +66,11 @@
         <div id="desktopLinks">
           <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
           <div class="page-links">
-            <a href="projects.html" id="active">Projects</a>
-            <a href="team.html">Team</a>
-            <a href="resources.html">Resources</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a class="nav_hov" href="projects.html" id="active">Projects</a>
+            <a class="nav_hov" href="team.html">Team</a>
+            <a class="nav_hov" href="resources.html">Resources</a>
+            <a class="nav_hov" href="about.html">About</a>
+            <a class="nav_hov" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
@@ -77,68 +84,109 @@
 
   <main>
 
-  <!--Images must be 810x540 pixels-->
+    <!--New Code for Project Page layout-->
+    <div class="container-fluid">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#all">All</a></li>
+        <li><a data-toggle="tab" href="#indiv">Individual</a></li>
+        <li><a data-toggle="tab" href="#group">Group</a></li>
+      </ul>
 
-  <div class="page-title">
-    <h1>Projects</h1>
-  </div>
+      <div class="tab-content">
+        <div id="all" class="tab-pane fade in active">
+          <!--Want to organize by most relevant first or alphabetically? Use a dropdown to sort?-->
+          <h3>All Projects</h3>
+          <div class="row">
+            <div class="column">
+              <a href= "jon-huber-fall2020.html" class="project-image">
+              <img src="images/proj_3_image.jpg"></a>
+              <h3 class="project-title">Modeling the Extent of Polar Ice in the Arctic By Jon Huber</h3> 
 
+              <a href= "environmental_ml.html" class="project-image">
+              <img src="images/environmental_ml_image.png"></a>
+              <h3 class="project-title">Environmental Machine Learning</h3> 
+            </div>
+            <div class="column">
+              <a href= "tiffany_tan_fall2020.html" class="project-image">
+              <img src="images/proj_4_image.jpg"></a>
+              <h3 class="project-title">California Wildfires Data Exploration and Modeling By Tiffany Tan</h3> 
 
-    <h2 class = "page-header">Team Projects</h2>
-    <div class="team-projects">
+              <a href= "proj_2_ecosynth.html" class="project-image">
+              <img src="images/proj_2_image.jpg"></a>
+              <h3 class="project-title">Eco-Update Synthesizer</h3>
 
-      <div class="project-item" id="project-item-1">
-        <a href= "proj_2_ecosynth.html" class="project-image"><img src="images/proj_2_image.jpg"></a>
-        <h3 class="project-title">Eco-Update Synthesizer</h3>
-        <!-- <h2>Team Project</h2> -->
-      </div>
-      <br><br>
-      <div class="project-item" id="project-item-2">
-        <a href= "proj_1_heatmap.html" class="project-image"><img src="images/proj_1_image.png"></a>
-        <h3 class="project-title">Michigan Chemical Heatmap</h3> 
-        <!-- <h2>Team Project</h2> -->
-      </div>
-      <br><br>
-      <div class="project-item" id="team-project-item-3">
-        <a href= "ecotech_blog.html" class="project-image"><img src="images/ecotech_blog_image.png"></a>
-        <h3 class="project-title">Eco-Tech Blog</h3> 
-        <!-- <h2>Team Project</h2> -->
-      </div>
-      <br><br>
-      <div class="project-item" id="team-project-item-4">
-        <a href= "environmental_ml.html" class="project-image"><img src="images/environmental_ml_image.png"></a>
-        <h3 class="project-title">Environmental Machine Learning</h3> 
-        <!-- <h2>Team Project</h2> -->
+            </div>
+            <div class="column">
+              <a href= "emma_thronson_fall2020.html" class="project-image">
+              <img src="images/proj_5_image.jpg"></a>
+              <h3 class="project-title">Exploring Causes of Harmful Algal Blooms in Lake Erie By Emma Thronson</h3> 
+
+              <a href= "proj_1_heatmap.html" class="project-image">
+              <img src="images/proj_1_image.png"></a>
+              <h3 class="project-title">Michigan Chemical Heatmap</h3> 
+            </div>
+            <div class="column">
+              <a href= "ecotech_blog.html" class="project-image">
+              <img src="images/ecotech_blog_image.png"></a>
+              <h3 class="project-title">Eco-Tech Blog</h3> 
+            </div>
+          </div>
+        </div>
+        <div id="indiv" class="tab-pane fade">
+          <h3>Individual</h3>
+          <div class="row">
+            <div class="column">
+              <a href= "jon-huber-fall2020.html" class="project-image">
+              <img src="images/proj_3_image.jpg"></a>
+              <h3 class="project-title">Modeling the Extent of Polar Ice in the Arctic By Jon Huber</h3> 
+            </div>
+            <div class="column"> 
+              <a href= "tiffany_tan_fall2020.html" class="project-image">
+              <img src="images/proj_4_image.jpg"></a>
+              <h3 class="project-title">California Wildfires Data Exploration and Modeling By Tiffany Tan</h3> 
+            </div>
+            <div class="column">
+              <a href= "emma_thronson_fall2020.html" class="project-image">
+              <img src="images/proj_5_image.jpg"></a>
+              <h3 class="project-title">Exploring Causes of Harmful Algal Blooms in Lake Erie By Emma Thronson</h3> 
+            </div>
+          </div>
+        </div>
+        <div id="group" class="tab-pane fade">
+          <h3>Group</h3>
+          <div class="row">
+            <div class="column">
+              <a href= "environmental_ml.html" class="project-image">
+              <img src="images/environmental_ml_image.png"></a>
+              <h3 class="project-title">Environmental Machine Learning</h3> 
+            </div>
+            <div class="column">
+              <a href= "ecotech_blog.html" class="project-image">
+              <img src="images/ecotech_blog_image.png"></a>
+              <h3 class="project-title">Eco-Tech Blog</h3> 
+            </div>
+            <div class="column">
+              <a href= "proj_2_ecosynth.html" class="project-image">
+              <img src="images/proj_2_image.jpg"></a>
+              <h3 class="project-title">Eco-Update Synthesizer</h3>
+            </div>
+            <div class="column">
+              <a href= "proj_1_heatmap.html" class="project-image">
+              <img src="images/proj_1_image.png"></a>
+              <h3 class="project-title">Michigan Chemical Heatmap</h3> 
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-
-    <h2 class = "page-header">Independent Projects</h2>
-    <div class="independent-projects">
-      <div class="project-item" id="project-item-3">
-        <a href= "jon-huber-fall2020.html" class="project-image"><img src="images/proj_3_image.jpg"></a>
-        <h3 class="project-title">Modeling the Extent of Polar Ice in the Arctic</h3> 
-        <h2>Jon Huber</h2>
-      </div>
-
-      <div class="project-item" id="project-item-4">
-        <a href= "tiffany_tan_fall2020.html" class="project-image"><img src="images/proj_4_image.jpg"></a>
-        <h3 class="project-title">California Wildfires Data Exploration and Modeling</h3> 
-        <h2>Tiffany Tan</h2>
-      </div>
-
-      <div class="project-item" id="project-item-4">
-        <a href= "emma_thronson_fall2020.html" class="project-image"><img src="images/proj_5_image.jpg"></a>
-        <h3 class="project-title">Exploring Causes of Harmful Algal Blooms in Lake Erie</h3> 
-        <h2>Emma Thronson</h2>
-      </div>
+    
+  <!--Images must be 810x540 pixels-->
 
      <!-- <div> enter "dots" here MOBILE ONLY</div> -->
      <!-- <div>list of projects and links</div>-->
 
      <!-- project navigation DESKTOP ONLY -->
-    </div>
-    
 
   </main>
 
