@@ -299,7 +299,8 @@ a.nav_hov:hover {
 }
 
 .project-title{
-	font-size: 25px;
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 20px;
 	align-self: left;
   	justify-self: left;
 }
@@ -339,25 +340,56 @@ a.nav_hov:hover {
   	height: auto;
 }
 
-/* Project Tabs */
-#project-page .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.tab-title {
+	font-size: 30px;
+	font-family: 'Anonymous Pro', monospace;
 }
 
-/* Create four equal columns that sits next to each other */
-#project-page .column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.page {
+	padding: 1rem;
+	height: 100%;
 }
 
-#project-page .column img {
+.projects {
+	max-width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.project-title {
+		font-size: 10px;
+	}
+	.tab-title {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1200px) {
+	.projects {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+#project-page .page img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 #project-page @media screen and (max-width: 800px) {
@@ -746,3 +778,4 @@ a.nav_hov:hover {
 		width: auto;
 	}
 }
+
