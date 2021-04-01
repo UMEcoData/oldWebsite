@@ -366,9 +366,11 @@ a.nav_hov:hover {
 @media screen and (max-width: 800px) {
 	.project-title {
 		font-size: 10px;
+		font-family: 'Anonymous Pro', monospace;
 	}
 	.tab-title {
 		font-size: 15px;
+		font-family: 'Anonymous Pro', monospace;
 	}
 }
 
