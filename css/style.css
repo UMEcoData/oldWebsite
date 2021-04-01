@@ -363,7 +363,7 @@ a.nav_hov:hover {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.project-title {
 		font-size: 10px;
 	}
@@ -372,7 +372,7 @@ a.nav_hov:hover {
 	}
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
 	.projects {
 		grid-template-columns: repeat(3, 1fr);
 	}
