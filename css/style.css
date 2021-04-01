@@ -363,20 +363,23 @@ a.nav_hov:hover {
 	}
 }
 
-@media screen and (max-width: 800px) {
-	.project-title {
-		font-size: 10px;
-		font-family: 'Anonymous Pro', monospace;
-	}
-	.tab-title {
-		font-size: 15px;
-		font-family: 'Anonymous Pro', monospace;
-	}
-}
-
 @media screen and (min-width: 800px) {
 	.projects {
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 800px max-width: 1200px) {
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.project-title {
+		font-size: 15px;
+		font-family: 'Anonymous Pro', monospace;
+	}
+	.tab-title {
+		font-size: 20px;
+		font-family: 'Anonymous Pro', monospace;
 	}
 }
 
