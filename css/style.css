@@ -143,7 +143,7 @@ a.nav_hov:hover {
  	background-image: url("../images/home-image2.jpg");
 
   /* Set a specific height */
-  height: 300px;
+  height: 200px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
