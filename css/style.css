@@ -319,8 +319,9 @@ a.nav_hov:hover {
 
 .project-image img{
     display: block;
-    width: 100%;
-    height: auto;
+    width: 810px;
+    height: 540px;
+
 }
 
 .project-link{
