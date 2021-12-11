@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title>Visualizing 2017 Pollution Data on a International Scale</title>
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTY8WVSYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TTY8WVSYN');
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700|Cousine|Fira+Mono:500|Karla&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  function myFunction() {
+    var x = document.getElementById("mobileLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+</head>
+
+
+
+
+<body id = "individual-project-pages">
+  <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
+
+ 
+  <header>
+   <nav class="navigation-class">
+      
+      <div class="mobile-nav">
+        <a href="index.html" class="logoBarMobile" id="eco-data-nav">Michigan EcoData</a>
+        <div id="mobileLinks">
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" aria-label="menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div class="desktop-nav">
+        <div id="desktopLinks">
+          <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
+          <div class="page-links">
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    
+    </nav>
+  </header>
+
+  
+
+
+  <main>
+    <div class="page-title">
+      <h1>Visualizing 2017 Pollution Data on a International Scale</h1>
+      <h2 class="name-credit">Akshey Deokule</h2>
+    </div>
+
+    <h2 class="page-header">Motivation:</h2>
+    <p>Travelling to India often, I realized how polluted it was from the poor air quality. Ever since, I have always wondered how India compared to other countries in terms of pollution if India itself was so polluted. Therefore, I used GHG (Greenhouse Gas) emission data from this kaggle dataset to pull data on emissions linked to countries in 2017.</p>
+    <br><br>
+
+    <h2 class="page-header">Methods:</h2>
+    <p>I was able to complete this project using Python and Visual Studio Code. To make the data presentable, I had to first clean the dataset of unnecessary data like years without emissions for example. Then, I had to use the Pycountry library to parse through the country names in the dataset and link them to their three character, alpha 3 country code. By then making the list a tuple, I was able to link this dataset with a graphical data-file which had country’s listed by their alpha 3 country code linked with a vector image of a global map. The majority of the dataset work was done using the Pandas and Geopandas libraries. To present the data visually, I used the Matplotlib library to showcase the graphical data-file with a gradient of color to represent pollution levels.</p>
+    <br><br>
+
+    <h2 class="page-header">Findings:</h2>
+    <p>I found out to little surprise that the USA was the major leader in pollution in 2017. However, I wish to largely expand on this project in the coming term. I want to add a slider which will present emissions data from 1990 to 2017 as you click and drag it. Additionally, I want to make the data more visibly understandable and clear by changing up the color gradient and representation values since the graph just shows the USA as a stark leader with every country at very low emissions in comparison.</p>
+    <p>Note: The one country missing in Africa is South Sudan and they don’t have nearly enough emissions surprisingly to even have a color.</p>
+    <br><br>
+    
+    <h2 class="page-header">Data Visualization:</h2>
+    <!-- images -->
+    <div class="independent-project-visualizations">
+      <img src="images/Akshey_visualization.png" alt="Graph">
+    </div>
+
+    <br><br>
+
+    <h2 class="page-header">Cleaned Dataset:</h2>
+    <p><a href="https://www.kaggle.com/srikantsahu/co2-and-ghg-emission-data"></a>https://www.kaggle.com/srikantsahu/co2-and-ghg-emission-data</p>
+
+
+    <br><br><br><br>
+    <p class="attribute"><span>Green House Gas Fumes Photo<a href="https://flic.kr/p/6WE7sN"></a> on <a href="https://flic.kr/p/6WE7sN">Flickr</a></span></p>
+
+  </main>
+
+  <footer>
+    <div class="foot">
+      <a href="https://www.facebook.com/Michigan-Eco-Data-489563858237129/"><img src="images/facebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/umecodata/"><img src="images/instagram.png" alt="instagram"></a>
+      <a href="https://github.com/UMEcoData"><img src="images/github.png" alt="github"></a>
+    </div>
+  </footer>
+
+  
+</body>
+
+
+</html>
