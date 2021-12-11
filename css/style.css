@@ -321,7 +321,7 @@ a.nav_hov:hover {
     display: block;
     width: 810px;
     height: 540px;
-
+	object-fit: scale-down;
 }
 
 .project-link{
