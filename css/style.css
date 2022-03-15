@@ -113,7 +113,7 @@ a.nav_hov:hover {
 /*-----------page titles-----------*/
 .page-title{
 	font-size: 30px;
-	padding-left:30px;
+	padding-left: 30px;
 	padding-bottom: 50px;
 }
 
@@ -202,16 +202,24 @@ a.nav_hov:hover {
 }
 
 /*----------------------about page----------------------*/
-#about-page p{
+#about-page p, div{
 	padding-right: 30px;
 	padding-left: 30px;
 	line-height: 1.5;
 	font-size: 16px;	
 }
 
+#about-page h1 {
+	margin: 0px;
+}
+
 #about-page ul{
-		list-style: none;
-	}
+	list-style: none;
+}
+
+#about-page-title {
+	padding-left: 30px;
+}
 
 
 
@@ -565,7 +573,7 @@ input[type=submit]:hover {
     background-color: white;
     padding: 20px;
     padding-right: 500px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 label{
@@ -711,13 +719,13 @@ label{
 
 	.page-links{
 		text-align: right;
-		grid-column: 2/ span 1: 
+		grid-column: 2/ span 1; 
 		grid-row: 1/ span 1;
 	}
 
 	#eco-data-nav{
 		text-align: left;
-		grid-column: 1/ span 1: 
+		grid-column: 1/ span 1; 
 		grid-row: 1/ span 1;
 	}
 
