@@ -74,7 +74,8 @@ p{
 	grid-row: 2/span 1;
 	text-align: center;
 	font-size: 50px;
-	padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .home-image{
@@ -106,10 +107,42 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin-bottom: 50px;
 }
 
 .icon-content {
     text-align: center;
     line-height: 1.5;
     justify-self: center;
+}
+
+.icon-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.icon-content a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+.foot{
+	grid-row: 8/span 1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #0D005F;
+	padding:5px;
+  	text-align: center;
+
+}
+
+.foot img{
+	padding:2.5px;
+	/*padding-right: 5px;*/
+	align-self: right;
+  	justify-self: right;
+  	text-align: right;
 }
