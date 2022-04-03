@@ -125,19 +125,27 @@ p{
     background-color: white;
     color: black;
     text-decoration: underline;
+    width: 100%;
 }
 
+/* footer style */
+
+.footer {
+    position: absolute;
+    background-color: #0D005F;
+    bottom: 0;
+    left: 0;
+}
+/* 
 .foot{
-	grid-row: 8/span 1;
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: #0D005F;
 	padding:5px;
   	text-align: center;
-
-}
+    margin: 0;
+} */
 
 .foot img{
 	padding:2.5px;

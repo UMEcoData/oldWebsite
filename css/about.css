@@ -41,78 +41,39 @@ p{
 
 /*----------- Navigation Style -----------*/
 
-.navigation-class{
-	grid-row: 1/span 1;
-	font-family: 'Anonymous Pro', monospace;
+.navigation {
+    display: grid;
+	background-color: #0D005F;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
-#home_page .logoBarMobile{
-	display: none;
+.page-link {
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    padding-left: 20px;
 }
 
-.mobile-nav {
-  overflow: hidden;
-  background-color: black;
-  position: relative;
+.desktop-view {
+    text-align: right;
+    padding-right: 20px;
 }
 
-.mobile-nav #mobileLinks {
-  display: none;
+.desktop-view a:hover, .logo a:hover{
+    background-color: #0D005F;
+    color: white;
+    text-decoration: underline;
 }
-
-.mobile-nav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  text-align: center;
-}
-
-.mobile-nav a.icon {
-  background: #0D005F;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-#mobileLinks a:hover {
-  background-color: white;
-  color: black;
-}
-
-.logoBarMobile {
-  background-color: #0D005F;
-  color: white;
-}
-
-#eco-data-nav{
-	text-align: left;
-}
-
-a.logoBarDesktop:hover{
-	color: white;
-}
-
-.logoBarDesktop, .page-links{
-	font-size: 18px;
-}
-.desktop-nav-home{
-	display: none;
-}
-
-.desktop-nav{
-	display: none;
-}
-
-a.nav_hov:hover {
-	color: white;
-}
-
 
 /*-----------page titles-----------*/
 .page-title{
+	padding-top: 15px;
 	font-size: 30px;
 	padding-left: 30px;
 	padding-bottom: 50px;
