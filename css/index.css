@@ -1,0 +1,221 @@
+/* Control F to Navigate File
+1. Document Style
+2. Navigation Style
+3. Index Style
+4. Footer Style
+*/
+
+/* --------------------- Document Style ------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+body{
+	font-family: 'Anonymous Pro', monospace;
+	display:grid;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-row-gap: 30px;
+}
+
+.attribute{
+	padding-top: 250px;
+	font-size: 10px;
+	text-align: center;
+}
+
+p{
+	font-family: verdana;
+	line-height: 1.5;
+}
+
+/* --------------------- Navigation Style ------------------- */
+
+.navigation-class{
+	grid-row: 1/span 1;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+#home_page .logoBarMobile{
+	display: none;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.mobile-nav #mobileLinks {
+  display: none;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.mobile-nav a.icon {
+  background: #0D005F;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#mobileLinks a:hover {
+  background-color: white;
+  color: black;
+}
+
+.logoBarMobile {
+  background-color: #0D005F;
+  color: white;
+}
+
+#eco-data-nav{
+	text-align: left;
+}
+
+a.logoBarDesktop:hover{
+	color: white;
+}
+
+.logoBarDesktop, .page-links{
+	font-size: 18px;
+}
+.desktop-nav-home{
+	display: none;
+}
+
+/* .desktop-nav{
+	display: none;
+} */
+
+a.nav_hov:hover {
+	color: white;
+}
+
+/* --------------------- Index Style ------------------- */
+
+/*-----------home title-----------*/
+
+.home-title{
+	grid-row: 2/span 1;
+	text-align: center;
+	font-size: 50px;
+	padding: 30px;
+}
+
+
+/*-----------home image-----------*/
+
+.home-image{
+	grid-row: 3/span 1;
+ 	background-image: url("../images/home-image2.jpg");
+
+  /* Set a specific height */
+  height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-image img{
+	max-width: 100%;
+}
+
+
+/*-----------home overview paragraph-----------*/
+#home-page .overview{
+	grid-row: 6/span 1;
+	padding: 5px;
+	padding-bottom: 60px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 60px;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+/*-----------home link icons*-----------*/
+
+.link-icons{
+	align-self: center;
+  	justify-self: center;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+.link-icons a{
+	text-decoration: none;
+	color:black;
+}
+
+.link-icons a:hover{
+	text-decoration: underline;
+}
+
+.about-icon-class{
+	grid-row: 5/span 1;
+}
+
+.projects-icon-class{
+	grid-row: 6/span 1;
+	padding: 30px;
+}
+
+.contact-icon-class{
+	grid-row: 7/span 1;
+	padding: 30px;
+}
+
+
+/* --------------------- Footer Style ------------------- */
+
+.foot{
+	grid-row: 8/span 1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #0D005F;
+	padding:5px;
+	/*padding-right: 5px;*/
+
+  	text-align: center;
+
+}
+
+.foot img{
+	padding:2.5px;
+	/*padding-right: 5px;*/
+	align-self: right;
+  	justify-self: right;
+  	text-align: right;
+}

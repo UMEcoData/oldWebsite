@@ -1,4 +1,3 @@
-/*----------- Document Style -----------*/
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +38,7 @@ p{
 	line-height: 1.5;
 }
 
-/*----------- Navigation Style -----------*/
+/*-----------navigation-----------*/
 
 .navigation-class{
 	grid-row: 1/span 1;
@@ -110,7 +109,6 @@ a.nav_hov:hover {
 	color: white;
 }
 
-
 /*-----------page titles-----------*/
 .page-title{
 	font-size: 30px;
@@ -124,27 +122,24 @@ a.nav_hov:hover {
 	padding-left:30px;
 }
 
-/*----------- About Style -----------*/
-#about-page p, div{
-	padding-right: 30px;
-	padding-left: 30px;
-	line-height: 1.5;
-	font-size: 16px;	
+/*----------------------rescources-page----------------------*/
+#resources-page ul{
+	padding-right: 70px;
+	padding-left: 70px;
+	font-family: verdana;
+	line-height: 1.2;
 }
 
-#about-page h1 {
-	margin: 0px;
+#resources-page .page-header{
+	padding-top: 25px;
+	padding-bottom: 5px;
 }
 
-#about-page ul{
-	list-style: none;
+#resources-page li a{
+	color: #0D005F;
 }
 
-#about-page-title {
-	padding-left: 30px;
-}
-
-/*----------- Footer Style -----------*/
+/*-----------footer-----------*/
 
 .foot{
 	grid-row: 8/span 1;
@@ -168,7 +163,6 @@ a.nav_hov:hover {
   	text-align: right;
 }
 
-/*----------- Mobile Layout Style -----------*/
 
 @media screen and (min-width: 800px){
 	
@@ -356,4 +350,5 @@ a.nav_hov:hover {
   		padding-right: 50px;
   		padding-left: 50px;
   	}
+
 }

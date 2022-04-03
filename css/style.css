@@ -123,7 +123,7 @@ a.nav_hov:hover {
 	padding-left:30px;
 }
 
-/*-----------------------home page-----------------------*/
+/*-----------------------index page-----------------------*/
 
 
 /*-----------home title-----------*/
@@ -586,9 +586,6 @@ label{
     font-size: 1em;
 }
 
-
-
-
 /*-----------footer-----------*/
 
 .foot{
@@ -613,6 +610,7 @@ label{
   	text-align: right;
 }
 
+/* mobile layout style */
 
 @media screen and (min-width: 800px){
 	
@@ -848,4 +846,4 @@ label{
 		width: auto;
 	}
 }
-
+ */
