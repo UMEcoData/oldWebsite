@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<title>Wind V Solar Countries</title>
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TTY8WVSYN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7TTY8WVSYN');
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700|Cousine|Fira+Mono:500|Karla&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+  function myFunction() {
+    var x = document.getElementById("mobileLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+</head>
+
+
+
+
+<body id = "individual-project-pages">
+  <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div> -->
+
+ 
+  <header>
+   <nav class="navigation-class">
+      
+      <div class="mobile-nav">
+        <a href="index.html" class="logoBarMobile" id="eco-data-nav">Michigan EcoData</a>
+        <div id="mobileLinks">
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="resources.html">Resources</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" aria-label="menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div class="desktop-nav">
+        <div id="desktopLinks">
+          <a href="index.html" class="logoBarDesktop" id="eco-data-nav">Michigan EcoData</a>
+          <div class="page-links">
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    
+    </nav>
+  </header>
+
+  
+
+
+  <main>
+    <div class="page-title">
+      <h1>Logistic Regression of Wind vs Solar Counties      </h1>
+      <h2 class="name-credit"> Project Lead: Angela Voit</h2>
+      <h3 class="name-credit"> Project Member: Geric Pan</h3>
+    </div>
+
+    <h2 class="page-header">Motivation:</h2>
+    <p>We want to see if we could compete some sort of ML project using the Yale Climate Opinion Survey data. After looking into other related county level data we could find we decide it would be interesting to examine the differences between coal counties and wind counties.    </p>
+    <br><br>
+
+    <h2 class="page-header">Methods</h2>
+    <p>Python analysis in Jupiter notebook with data from Yale, the US census bureau, and the US Energy Information Administration    </p>
+    <br><br>
+
+    <h2 class="page-header">Findings</h2>
+    <p>We were able to develop a logistic regression using sklearn and the liblinear model for an accuracy of 88%. We looked at the coeffs of the regression model which we suspect to have been highly influenced by outliers and multicollinearity despite the overall accuracy of the model. And we also created some visualizations of coal versus wind county-level data. Not the visualizations are labeled for wind and not wind. Not wind means a coal county for how we set up our data. What's striking overall is although the model can classify coal versus wind counties, they are rather similar on many of the opinion measurements.    </p>
+    <br><br>
+    <br><br>
+        
+    <h2 class="page-header">Data Visualizations:</h2>
+    <!-- images -->
+    <div class="independent-project-visualizations">
+      <img src="images/Co2limitsPlot - Angela Voit.png" alt="Figure 1: Scatter Plot">
+      <img src="images/humancausedPlot - Angela Voit.png" alt="Figure 2: Scatter Plot">
+      <img src="images/localofficialsPlot - Angela Voit.png" alt="Figure 3: Scatter Plot">
+      <img src="images/PrevalentCoalFeatures - Angela Voit.png" alt="Figure 4: Coal Features Table">
+      <img src="images/PrevalentWindFeatures - Angela Voit.png" alt="Figure 5: Wind Features Table">
+      <img src="images/IncomePercentChange - Angela Voit.png" alt="Figure 6: Scatter Plot">
+    </div>
+
+    <br><br>
+
+    <p class="sources">Sources:</p>
+
+    <ul class="sources">
+      <li><a href="https://www.outdoorphotographer.com/blog/on-assignment-nextera-energy-resources//">https://www.outdoorphotographer.com/blog/on-assignment-nextera-energy-resources/</a></li>
+    </ul>
+    
+
+    <br><br><br><br>
+    <!-- <p class="attribute"><span><a href="https://flic.kr/p/6WE7sN">Green House Gas Fumes Photo</a> on <a href="https://flic.kr/p/6WE7sN">Flickr</a></span></p> -->
+
+  </main>
+
+  <footer>
+    <div class="foot">
+      <a href="https://www.facebook.com/Michigan-Eco-Data-489563858237129/"><img src="images/facebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/umecodata/"><img src="images/instagram.png" alt="instagram"></a>
+      <a href="https://github.com/UMEcoData"><img src="images/github.png" alt="github"></a>
+    </div>
+  </footer>
+
+  
+</body>
+
+
+</html>
