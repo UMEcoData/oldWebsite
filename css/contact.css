@@ -38,7 +38,92 @@ p{
 	line-height: 1.5;
 }
 
+/*-----------navigation-----------*/
+
+.navigation-class{
+	grid-row: 1/span 1;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+#home_page .logoBarMobile{
+	display: none;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+
+.mobile-nav #mobileLinks {
+  display: none;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.mobile-nav a.icon {
+  background: #0D005F;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#mobileLinks a:hover {
+  background-color: white;
+  color: black;
+}
+
+.logoBarMobile {
+  background-color: #0D005F;
+  color: white;
+}
+
+#eco-data-nav{
+	text-align: left;
+}
+
+a.logoBarDesktop:hover{
+	color: white;
+}
+
+.logoBarDesktop, .page-links{
+	font-size: 18px;
+}
+.desktop-nav-home{
+	display: none;
+}
+
+.desktop-nav{
+	display: none;
+}
+
+a.nav_hov:hover {
+	color: white;
+}
+
+
+/*-----------page titles-----------*/
+.page-title{
+	font-size: 30px;
+	padding-left: 30px;
+	padding-bottom: 50px;
+}
+
+/*-----------page headers-----------*/
+.page-header{
+	font-size: 20px;
+	padding-left:30px;
+}
 /*----------------------contact----------------------*/
+
 #contact-page form{
 	padding-left: 20px;
 }
